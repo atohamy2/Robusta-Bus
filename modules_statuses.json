@@ -1,0 +1,13 @@
+{
+    "Language": true,
+    "Roles": true,
+    "Users": true,
+    "Country": true,
+    "City": true,
+    "Rider": true,
+    "Vehicle": true,
+    "Common": true,
+    "Uploader": true,
+    "Colors": true,
+    "Driver": true
+}

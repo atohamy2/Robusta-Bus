@@ -1,0 +1,19 @@
+{
+    "Actions": "خيارات",
+    "Add New City": "اضافة مدينة",
+    "Add New Country": "اضافة دولة",
+    "Add New Language": "اضافة لغة",
+    "Add New Role": "اضافة دور",
+    "Add New User": "اضافة مستخدم",
+    "BACK TO HOME": "العوده الي الرئيسية",
+    "Select Country": "اختر دولة",
+    "Select Currency": "اختر عمله",
+    "Select Currency code": "اختر كود العملة",
+    "Select Language": "اختر لغة",
+    "Select Role": "اختر دور",
+    "Select UTC Offset": "اختر فارق التوقيت الزمني",
+    "Settings": "الاعدادات",
+    "You are not authorized!": "غير مسموح لك بالدخول !",
+    "pagination.next": "التالي",
+    "pagination.previous": "السابق"
+}
