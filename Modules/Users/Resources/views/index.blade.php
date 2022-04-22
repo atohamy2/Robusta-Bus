@@ -30,9 +30,6 @@
                                                 <th>{{ __('Name') }}</th>
                                                 <th>{{ __('Email') }}</th>
                                                 <th>{{ __('Role') }}</th>
-                                                <th>{{ __('Country') }}</th>
-                                                <th>{{ __('Last Activity At') }}</th>
-                                                <th>{{ __('Last Activity Log') }}</th>
                                                 <th>{{ __('Actions') }}</th>
                                             </tr>
                                         </thead>
@@ -43,9 +40,6 @@
                                                     <td>{{ $item->name }}</td>
                                                     <td>{{ $item->email }}</td>
                                                     <td>{{ optional($item->role)->name }}</td>
-                                                    <td>{{ optional($item->country)->country_name }}</td>
-                                                    <td>{{ optional($item->activity_log)->created_at }}</td>
-                                                    <td>{{ optional($item->activity_log)->description }}</td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <span
@@ -71,9 +65,6 @@
                                                 <th>{{ __('Name') }}</th>
                                                 <th>{{ __('Email') }}</th>
                                                 <th>{{ __('Role') }}</th>
-                                                <th>{{ __('Country') }}</th>
-                                                <th>{{ __('Last Activity At') }}</th>
-                                                <th>{{ __('Last Activity Log') }}</th>
                                                 <th>{{ __('Actions') }}</th>
                                             </tr>
                                         </tfoot>

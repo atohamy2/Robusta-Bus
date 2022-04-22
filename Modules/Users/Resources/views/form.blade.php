@@ -41,17 +41,7 @@
             </div>
         </div>
 
-        <div class="col-6">
-            <div class="form-group row align-items-center">
-                <div class="col-lg-2 col-3">
-                    <label for="field-name">{{ __('Country') }}</label>
-                </div>
-                <div class="col-lg-10 col-9">
-                    <x-country-countries-component :selectedCountry="inputValidation('country_id', $model)" required="false" />
-                    {!! $errors->first('country_id', '<p class="text-danger">:message</p>') !!}
-                </div>
-            </div>
-        </div>
+
 
         <div class="col-6">
             <div class="form-group row align-items-center">

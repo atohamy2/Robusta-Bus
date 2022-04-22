@@ -5,7 +5,12 @@ Application for booking bus trips between the governorates.
 
 ## Installation
 
-
+- Configure database username and password in .env file.
+- Run  php artisan migrate
+- Run  php artisan db:seed
+- php artisan module:seed Language
+- Run  php artisan module:seed Roles
+- Run  php artisan module:seed City
 
 ## Laravel Sponsors
 

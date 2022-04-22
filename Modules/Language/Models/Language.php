@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Language extends Model
 {
-    use HasFactory, ActivityLog;
+    use HasFactory;
 
     protected $table = 'languages';
 

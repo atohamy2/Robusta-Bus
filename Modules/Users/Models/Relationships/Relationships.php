@@ -6,8 +6,5 @@ use Modules\Country\Models\Country;
 
 trait Relationships
 {
-    public function country()
-    {
-        return $this->belongsTo(Country::class);
-    }
+
 }

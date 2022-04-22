@@ -59,11 +59,9 @@
                     <i class="menu-livicon" data-icon="thumbnails-big"></i>
                     <span data-i18n="Home">{{ __('Home') }}</span></a>
             </li>
-            @canany(['users.index', 'rider.index'])
+            @canany(['users.index'])
                 <li class="dropdown nav-item
                 {{ request()->is('admin/users*') ? 'active' : '' }}
-                {{ request()->is('admin/rider*') ? 'active' : '' }}
-                {{ request()->is('admin/driver*') ? 'active' : '' }}
 
                 " data-menu="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
@@ -78,29 +76,14 @@
                                     <span data-i18n="Users">{{ __('Users') }}</span></a>
                             </li>
                         @endcan
-                        @can('rider.index')
-                            <li data-menu="">
-                                <a class="dropdown-item align-items-center" href="{{ route('rider.index') }}"
-                                    data-toggle="dropdown">
-                                    <i class="bx bx-right-arrow-alt"></i>
-                                    <span data-i18n="Riders">{{ __('Riders') }}</span></a>
-                            </li>
-                        @endcan
-                         @can('driver.index')
-                        <li data-menu="">
-                            <a class="dropdown-item align-items-center" href="{{ route('driver.index') }}"
-                                data-toggle="dropdown">
-                                <i class="bx bx-right-arrow-alt"></i>
-                                <span data-i18n="Drivers">{{ __('Drivers') }}</span></a>
-                        </li>
-                    @endcan
+
+
                     </ul>
                 </li>
             @endcanany
             @canany(['language.index', 'roles.index', 'country.index', 'city.index'])
                 <li class="dropdown nav-item
                 {{ request()->is('admin/language*') ? 'active' : '' }}
-                {{ request()->is('admin/country*') ? 'active' : '' }}
                 {{ request()->is('admin/city*') ? 'active' : '' }}
                 {{ request()->is('admin/roles*') ? 'active' : '' }}
                 "
@@ -119,14 +102,7 @@
                             </li>
                         @endcan
 
-                        @can('country.index')
-                            <li data-menu="">
-                                <a class="dropdown-item align-items-center" href="{{ url('admin/country') }}"
-                                    data-toggle="dropdown">
-                                    <i class="bx bx-right-arrow-alt"></i>
-                                    <span data-i18n="Countries">{{ __('Countries') }}</span></a>
-                            </li>
-                        @endcan
+
 
                         @can('city.index')
                             <li data-menu="">

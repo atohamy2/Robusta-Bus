@@ -7,7 +7,7 @@ use Spatie\Activitylog\Traits\CausesActivity;
 
 trait Attributes
 {
-    use ActivityLog, CausesActivity;
+    use  CausesActivity;
 
     /**
      * Get the Role name
@@ -37,8 +37,5 @@ trait Attributes
      *
      * @return array
      */
-    public function getActivityLogAttribute()
-    {
-        return $this->actions()->latest()->first();
-    }
+
 }
