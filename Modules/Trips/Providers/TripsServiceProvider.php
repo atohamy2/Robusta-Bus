@@ -1,22 +1,21 @@
 <?php
 
-namespace Modules\Lines\Providers;
+namespace Modules\Trips\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
-use Modules\Lines\View\Components\LinesComponent;
 
-class LinesServiceProvider extends ServiceProvider
+class TripsServiceProvider extends ServiceProvider
 {
     /**
      * @var string $moduleName
      */
-    protected $moduleName = 'Lines';
+    protected $moduleName = 'Trips';
 
     /**
      * @var string $moduleNameLower
      */
-    protected $moduleNameLower = 'lines';
+    protected $moduleNameLower = 'trips';
 
     /**
      * Boot the application events.
@@ -118,7 +117,7 @@ class LinesServiceProvider extends ServiceProvider
     private function registerComponents()
     {
         $components = [
-            LinesComponent::class,
+            //
         ];
         $this->loadViewComponentsAs($this->moduleNameLower, $components);
     }

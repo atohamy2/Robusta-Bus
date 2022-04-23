@@ -78,6 +78,30 @@
                         @endcan
 
 
+
+                    </ul>
+                </li>
+            @endcanany
+            @canany(['trips.index'])
+                <li class="dropdown nav-item
+                {{ request()->is('admin/trips*') ? 'active' : '' }}
+
+                " data-menu="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+                        <i class="menu-livicon" data-icon="users"></i>
+                        <span data-i18n="Persons">{{ __('Trips') }}</span></a>
+                    <ul class="dropdown-menu">
+
+                        @can('trips.index')
+                            <li data-menu="">
+                                <a class="dropdown-item align-items-center" href="{{ route('trips.index') }}"
+                                   data-toggle="dropdown">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    <span data-i18n="Users">{{ __('Trips') }}</span></a>
+                            </li>
+                        @endcan
+
+
                     </ul>
                 </li>
             @endcanany

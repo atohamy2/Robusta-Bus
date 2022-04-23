@@ -10,5 +10,6 @@
     "Uploader": true,
     "Colors": true,
     "Driver": true,
-    "Lines": true
+    "Lines": true,
+    "Trips": true
 }
