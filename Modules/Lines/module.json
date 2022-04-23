@@ -1,0 +1,13 @@
+{
+    "name": "Lines",
+    "alias": "lines",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Lines\\Providers\\LinesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

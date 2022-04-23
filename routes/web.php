@@ -19,7 +19,7 @@ Route::get('lang/{locale}',function ($locale){
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/admin');
 });
 Auth::routes();
 

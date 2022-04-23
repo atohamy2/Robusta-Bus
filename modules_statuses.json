@@ -9,5 +9,6 @@
     "Common": true,
     "Uploader": true,
     "Colors": true,
-    "Driver": true
+    "Driver": true,
+    "Lines": true
 }

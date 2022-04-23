@@ -19,7 +19,7 @@ class CityController extends Controller
     {
         $this->CityRepository = $CityRepository;
         $this->LanguageRepository = $LanguageRepository;
-        
+
     }
     /**
      * Display a listing of the resource.
@@ -39,7 +39,7 @@ class CityController extends Controller
     {
         $data['model'] = $this->CityRepository->newInstance();
         $data['languages']=$this->LanguageRepository->all();
-       
+
         return view('city::create')->with($data);
     }
 
@@ -85,7 +85,7 @@ class CityController extends Controller
      */
     public function update(CityRequest $request, $id)
     {
-        
+
         $this->CityRepository->update($request, $id);
         return redirect()->route('city.index')->with(['status' => 'success', 'message' => __('Updated Successfully')]);
     }
@@ -97,7 +97,6 @@ class CityController extends Controller
      */
     public function destroy($id)
     {
-
         $this->CityRepository->delete($id);
         return redirect()->route('city.index')->with(['status' => 'success', 'message' => __('Deleted Successfully')]);
     }
