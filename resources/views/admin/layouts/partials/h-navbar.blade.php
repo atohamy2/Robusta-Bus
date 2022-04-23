@@ -4,7 +4,7 @@
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item"><a class="navbar-brand" href="{{ url('/') }}">
                     <div class="brand-logo"><img class="logo" src="{{ asset('xlstart-assets/') }}//app-assets/images/logo/logo-light.png"></div>
-                    <h2 class="brand-text mb-0">MASSARK</h2></a></li>
+                    <h2 class="brand-text mb-0">Robusta Bus</h2></a></li>
         </ul>
     </div>
     <div class="navbar-wrapper">
